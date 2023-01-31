@@ -1,4 +1,4 @@
-# Piecewise recurrence relation
+# Piecewise Recurrence Relation
 Based on the folowing piecewise recurrence relation:
 ### F(n) = F(n-) + F(n-2), where F(0) = 0, F(1) = 1, F(2) = 2.
 This program ganarates the output of the relation for any inter non-negaitve value of **n** using different 3 ways as follows:
