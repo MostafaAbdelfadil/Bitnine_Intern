@@ -24,18 +24,18 @@ int f_way2(int n) {
 int f_way3(int n) {
 	// version THREE: using Dynamic Programming 
 	int* f = (int*)malloc(sizeof(int) * (n + 1));
-	f[0] = 0;
-	f[1] = 1;
-	f[2] = 2;
-	for (int i = 3; i <= n; i++) {
-		f[i] = f[i - 2] + f[i - 3];
+	for (int i = 0; i <= n; i++) {
+		if (i <= 2)
+			f[i] = i;
+		else
+			f[i] = f[i - 2] + f[i - 3];
 	}
 	return f[n];
 }
 
 void main() {
 	int way1, way2, way3;
-	for (int i = 0; i < 11; i++) {
+	for (int i = 0; i < 7; i++) {
 		way1 = f_way1(i);
 		way2 = f_way2(i);
 		way3 = f_way3(i);
