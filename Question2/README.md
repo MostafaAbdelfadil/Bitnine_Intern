@@ -1,7 +1,7 @@
 # Piecewise Recurrence Relation
-Based on the folowing piecewise recurrence relation:
+Based on the following piecewise recurrence relation:
 ### F(n) = F(n-) + F(n-2), where F(0) = 0, F(1) = 1, F(2) = 2.
-This program ganarates the output of the relation for any inter non-negaitve value of **n** using different 3 ways as follows:
+This program generates the output of the relation for any integer non-negatve value of **n** using different 3 ways as follows:
 * Using Function Recursion.
 * Using Dynamic Programming.
 * Using Space Optimization.
